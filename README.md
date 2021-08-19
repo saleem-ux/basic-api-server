@@ -58,4 +58,4 @@ pull request link: https://github.com/saleem-ux/basic-express-server58/pull/1
 
 GitHub Actions link : https://github.com/saleem-ux/basic-express-server58/actions
 
-![Lab03](img/Lab03.jpg)
+![Lab03](img/lab03.jpg)
