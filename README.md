@@ -1,7 +1,7 @@
 # basic-api-server
 
 ## .env requirements (where applicable)
-PORT - 3000
+PORT - 8080
 
 ## NODE.JS
 
@@ -52,10 +52,13 @@ NPM Init -y: Installs package.json file
 
 
 
-main branch Heroku url: https://basic-express-server58.herokuapp.com/
+main branch Heroku url: https://basicapi-server.herokuapp.com/
 
-pull request link: https://github.com/saleem-ux/basic-express-server58/pull/1
+pull request link: https://github.com/saleem-ux/basic-api-server/pull/4
 
-GitHub Actions link : https://github.com/saleem-ux/basic-express-server58/actions
+GitHub Actions link : https://github.com/saleem-ux/basic-api-server/actions
 
+
+## Diagram 
 ![Lab03](img/lab03.jpg)
+
