@@ -19,7 +19,7 @@ describe('express server', () => {
         // assert
         expect(response.status).toBe(status);
         expect(response.text).toBe(text);
-    });
+    },70000);
 
     it('should check 500 errors', async () => {
         //arrange
@@ -32,7 +32,7 @@ describe('express server', () => {
         // assert
         expect(response.status).toBe(status);
         expect(response.body.route).toBe(param);
-    });
+    },70000);
 
     it('should check 404 errors', async () => {
         //arrange
@@ -44,7 +44,7 @@ describe('express server', () => {
 
         // assert
         expect(response.status).toBe(status);
-    });
+    },70000);
 
     /// food status
     it('check for get all food status', async () => {
@@ -56,12 +56,12 @@ describe('express server', () => {
         const response = await request.get(param);
         //assert
         expect(response.status).toBe(status);
-    });
+    },70000);
 
     it('check for the get /food:id status', async () => {
         const response = await request.get('/food/1');
         expect(response.status).toBe(200);
-    });
+    },70000);
 
     it('check for the status for the POST', async () => {
         const reqBody = {
@@ -70,28 +70,28 @@ describe('express server', () => {
         };
         const response = await request.post('/food').send(reqBody);
         expect(response.status).toBe(201);
-    });
+    },70000);
 
     it('check for the status for the update', async () => {
         const response = await request.put('/food/2');
         expect(response.status).toBe(200);
-    });
+    },70000);
 
     it('check for the status for the delete', async () => {
         const response = await request.delete('/food/1');
         expect(response.status).toBe(204);
-    });
+    },70000);
 
     /// clothes status
     it('check for the get all clothes status', async () => {
         const response = await request.get('/clothes');
         expect(response.status).toBe(200);
-    });
+    },70000);
 
     it('check for the get /clothes:id status', async () => {
         const response = await request.get('/clothes/1');
         expect(response.status).toBe(200);
-    });
+    },70000);
 
     it('check for the status for the POST', async () => {
         const reqBody = {
@@ -100,16 +100,16 @@ describe('express server', () => {
         };
         const response = await request.post('/clothes').send(reqBody);
         expect(response.status).toBe(201);
-    });
+    },70000);
 
     it('check for the status for the update', async () => {
         const response = await request.put('/clothes/2');
         expect(response.status).toBe(200);
-    });
+    },70000);
 
     it('check for the status for the delete', async () => {
         const response = await request.delete('/clothes/1');
         expect(response.status).toBe(204);
-    });
+    },70000);
 
 });

@@ -1,5 +1,6 @@
 'use strict';
 
+require('dotenv').config('./src/server');
 const POSGRES_URI = process.env.POSTGRES_URI || 'postgres://localhost/saleem-ux';
 
 const { Sequelize, DataTypes } = require('sequelize');
